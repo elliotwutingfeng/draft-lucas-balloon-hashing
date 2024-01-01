@@ -380,8 +380,8 @@ return buffer[spaceCost - 1]
 
    In all cases, it is RECOMMENDED to use a 128- or 256-bit salt.  Other
    salt lengths SHOULD NOT be used, and the salt length SHOULD NOT vary
-   in your protocol/application.  See the Section 10 section for
-   guidance on generating the salt.
+   in your protocol/application.  See Section 10 for guidance on
+   generating the salt.
 
 8.  Encoding Password Hashes
 

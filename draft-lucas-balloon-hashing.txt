@@ -779,7 +779,8 @@ Acknowledgments
    Schechter.
 
    Thank you to the Rust Crypto contributors for making Balloon
-   implementations interoperable.
+   implementations interoperable and Henry Corrigan-Gibbs for his
+   helpful comments.
 
 Author's Address
 

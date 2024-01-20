@@ -1219,13 +1219,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <p id="section-1-2.1.1">It has proven memory-hardness properties, making it resistant against sequential GPU/ASIC attacks. An adversary trying to save space pays a large penalty in computation time.<a href="#section-1-2.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-2.2">
-          <p id="section-1-2.2.1">It can be instantiated with any cryptographic hash function or XOF, making it a mode of operation for these existing algorithms.<a href="#section-1-2.2.1" class="pilcrow">¶</a></p>
+          <p id="section-1-2.2.1">It can be instantiated with any cryptographic hash function or XOF, making it a mode of operation for these existing algorithms. No new, unstudied primitives are required.<a href="#section-1-2.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-2.3">
           <p id="section-1-2.3.1">It uses a password-independent memory access pattern, making it resistant to cache-timing attacks. This property is especially relevant in cloud computing environments where multiple users can share the same physical machine.<a href="#section-1-2.3.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-2.4">
-          <p id="section-1-2.4.1">It is easy to implement whilst offering acceptable performance.<a href="#section-1-2.4.1" class="pilcrow">¶</a></p>
+          <p id="section-1-2.4.1">It is easy to implement whilst being fast enough for real-world use.<a href="#section-1-2.4.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="section-1-3">Unfortunately, the paper did not fully specify the algorithm nor provide guidance on parameters. Therefore, this document aims to rectify the situation based on existing interoperable implementations, real-world password hashing guidance, and research since the paper.<a href="#section-1-3" class="pilcrow">¶</a></p>
@@ -1485,7 +1485,7 @@ return Hash(password || salt || hash)
       <h2 id="name-choosing-the-parameters">
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-choosing-the-parameters" class="section-name selfRef">Choosing the Parameters</a>
       </h2>
-<p id="section-7-1">The higher the <code>spaceCost</code>, <code>timeCost</code>, and <code>delta</code>, the longer it takes to compute an output. If these values are too small, security is unnecessarily reduced. If they are too large, there is a risk of user frustration and denial-of-service for different types of user devices and servers. To make matters even more complicated, these parameters may need to be increased over time as hardware gets faster.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-7-1">The higher the <code>spaceCost</code>, <code>timeCost</code>, and <code>delta</code>, the longer it takes to compute an output. If these values are too small, security is unnecessarily reduced. If they are too large, there is a risk of user frustration and denial-of-service for different types of user devices and servers. To make matters even more complicated, these parameters may need to be increased over time as hardware gets faster/smaller.<a href="#section-7-1" class="pilcrow">¶</a></p>
 <p id="section-7-2">The following procedure can be used to choose parameters:<a href="#section-7-2" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-7-3">
 <li id="section-7-3.1">
